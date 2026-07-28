@@ -1,2 +1,2 @@
-# Capstone-Cybersecurity-Blue-Team-lab
-Intrusion Detection
+# Group02_Snort_IDS_Implementation
+
