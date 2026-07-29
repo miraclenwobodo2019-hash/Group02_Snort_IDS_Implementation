@@ -1,1 +1,111 @@
 # Validation Results
+┌──(kali㉿kali)-[~]
+└─$ sudo snort -T -c /usr/local/etc/snort/snort.lua
+--------------------------------------------------
+o")~   Snort++ 3.12.2.0
+--------------------------------------------------
+Loading /usr/local/etc/snort/snort.lua:
+Loading snort_defaults.lua:
+Finished snort_defaults.lua:
+        references
+        classifications
+        alerts
+        daq
+        decode
+        host_cache
+        host_tracker
+        hosts
+        network
+        packets
+        process
+        search_engine
+        s7commplus
+        dce_udp
+        dce_http_proxy
+        dce_http_server
+        gtp_inspect
+        http_inspect
+        http2_inspect
+        appid
+        ips
+        file_inspect
+        js_norm
+        file_policy
+        ftp_data
+        ftp_client
+        ftp_server
+        smtp
+        port_scan
+        dce_tcp
+        dce_smb
+        opcua
+        modbus
+        mms
+        iec104
+        dnp3
+        cip
+        telnet
+        ssl
+        ssh
+        socks
+        sip
+        rpc_decode
+        pop
+        normalizer
+        netflow
+        imap
+        dns
+        back_orifice
+        arp_spoof
+        stream_file
+        stream_user
+        stream_udp
+        stream_tcp
+        stream_icmp
+        stream_ip
+        stream
+        output
+        active
+        wizard
+        binder
+Finished /usr/local/etc/snort/snort.lua:
+Loading file_inspect.rules_file:
+Loading file_magic.rules:
+Finished file_magic.rules:
+Finished file_inspect.rules_file:
+Loading ips.rules:
+Loading /usr/local/etc/snort/local.rules:
+Finished /usr/local/etc/snort/local.rules:
+Finished ips.rules:
+--------------------------------------------------
+ips policies rule stats
+              id  loaded  shared enabled    file
+               1     220       0     220    /usr/local/etc/snort/snort.lua
+--------------------------------------------------
+rule counts
+       total rules loaded: 220
+               text rules: 220
+            option chains: 220
+            chain headers: 2
+--------------------------------------------------
+port rule counts
+             tcp     udp    icmp      ip
+     any       0       0       1       0
+   total       0       0       1       0
+--------------------------------------------------
+service rule counts          to-srv  to-cli
+                  file_id:      219     219
+                    total:      219     219
+--------------------------------------------------
+fast pattern groups
+                to_server: 1
+                to_client: 1
+--------------------------------------------------
+search engine (ac_bnfa)
+appid: MaxRss diff: 2944
+appid: patterns loaded: 300
+--------------------------------------------------
+pcap DAQ configured to passive.
+
+Snort successfully validated the configuration (with 0 warnings).
+o")~   Snort exiting
